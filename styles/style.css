@@ -16,7 +16,6 @@ body {
   padding: 0 20px;
 }
 
-
 header {
   position: absolute;
   top: 0;
@@ -26,17 +25,10 @@ header {
   padding-top: 32px;
 }
 
-
-header::after {
-  display: none;
-}
-
 header .center {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
   padding-bottom: 16px;
 }
@@ -65,23 +57,16 @@ nav a {
 
 .hero {
   position: relative;
-  height: 100vh; 
-  min-height: 700px;
+  
   
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center center; 
   background-repeat: no-repeat;
-  
   display: flex;
-
   align-items: flex-start; 
   padding-top: 180px; 
-}
-
-
-.hero::before {
-  content: none;
+  padding-bottom: 180px; 
 }
 
 .hero-content {
@@ -130,15 +115,18 @@ nav a {
   gap: 48px 32px;
 }
 
+
 .product-card img {
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  height: auto; 
   object-fit: cover;
   margin-bottom: 16px;
 }
 
+
 .product-card h3 {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 8px;
 }
 
@@ -149,11 +137,11 @@ nav a {
   margin-bottom: 12px;
 }
 
-.product-card .price {
-  font-size: 20px;
-  font-weight: 700;
-}
 
+.product-card .price {
+  font-size: 24px;
+  font-weight: 500;
+}
 
 footer {
   background-color: #f8f8f8;
